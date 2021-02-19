@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/b14771b76e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>pop-up</title>
+</head>
+
+<body>
+  <button class="btn" onclick="toggleLogin()">
+    Show Login
+  </button>
+  <div class="overlay">
+    <div class="login">
+      <div class="header">
+        <h1>login</h1>
+         <i class="fas fa-times" onclick="toggleLogin()"></i>
+      </div>
+
+      <div class="body">
+        <form action="" class="form">
+          <input type="text" class="username"/>
+          <input type="password" placeholder="password">
+        </form>
+          <div class="footer">
+            <button>login</button>    
+          </div>
+        
+      </div>
+
+    </div>
+  </div>
+  <script>
+    function toggleLogin(){
+      document.querySelector(".overlay").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
